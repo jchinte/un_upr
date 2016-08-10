@@ -1,4 +1,4 @@
-#!/home/jchinte/work2/upr/env/bin/python
+#!/home/jchinte/git/benetech/un_upr/env/bin/python
 from django.core import management
 
 if __name__ == "__main__":

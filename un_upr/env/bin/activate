@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/jchinte/work2/upr/env"
+VIRTUAL_ENV="/home/jchinte/git/benetech/un_upr/env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

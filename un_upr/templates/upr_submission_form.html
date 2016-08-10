@@ -1,0 +1,23 @@
+
+
+<style type="text/css">
+	.errorlist{color:red;
+	display:None;
+	}
+</style>
+<form method="post">
+{{ form }}
+{% csrf_token %} 
+{% for title, fs in form.formset %}
+<div>{{ title }}
+	!{{ fs.management_form }}!
+	{% for f in fs %}
+	<p>
+	{{ f }}
+	</p>
+	{% endfor %}
+</div>
+{% endfor %}
+<input type="submit" value="Submit">adslfj</input>
+</form>
+yas

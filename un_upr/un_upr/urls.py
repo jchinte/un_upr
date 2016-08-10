@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.contrib.auth.views import login
+import upr_form_assist
+from upr_form_assist.views import LoginView, LogoutView, IndexView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^login/', login, name='login'),
+    url(r'^start/', upr_form_assist.views.IndexView.as_view()),
+    url(r'^reset/', login, name='password_reset'),
+    url(r'^submitNew/', upr_form_assist.views.UPRSubmissionCreate.as_view()),
+    
 ]
